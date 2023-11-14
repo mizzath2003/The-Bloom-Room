@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Activity.categoryActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAction_PR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:clickable="true"
+        app:backgroundTint="#FEF2F4"
+        app:circularflow_radiusInDP="10px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_new_24"
+        app:tint="#C3F13170" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="72dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="12dp"
+        android:tint="#FFF6F6"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:srcCompat="@drawable/add_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Category"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView2"
+        style="@style/custom_card_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FEF2F4"
+        android:backgroundTint="#FEF2F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Enter Category Id"
+                android:textColor="#6C6669"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/txtCategoryId_CA"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <EditText
+                android:id="@+id/txtCategoryId_CA"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="72dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/baseline_production_quantity_limits_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="#C3F13170"
+                android:ems="10"
+                android:hint="Enter Id"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtCategoryName_CA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.16" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Enter category name"
+                android:textColor="#6C6669"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/txtCategoryName_CA"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <EditText
+                android:id="@+id/txtCategoryName_CA"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="#C3F13170"
+                android:ems="10"
+                android:hint="Enter name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnAdd_CA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnAdd_CA"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="48dp"
+                android:backgroundTint="#C3F13170"
+                android:text="ADD"
+                app:cornerRadius="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
