@@ -2,6 +2,8 @@
 
 Welcome to The Bloom Room, an interactive Android mobile application crafted for efficient flower management.
 
+![The-Bloom-Room](readme.png)
+
 ## 🌺 App Overview
 
 The Bloom Room provides a seamless experience for:
